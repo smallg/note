@@ -1,0 +1,14 @@
+{
+  "name": "referral-management",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "4.17.1",
+    "compression": "1.7.4",
+    "http-proxy-middleware": "0.19.1"
+  },
+  "engines": {
+    "node": "10.16.3",
+    "npm": "6.4.1"
+  }
+}
+

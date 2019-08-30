@@ -1,0 +1,16 @@
+---
+applications:
+  - name: referral-management-dev
+    memery: 1024M
+    dist_quota: 1024M
+    instances: 1
+    command: node server.js
+    buildpacks:
+      - https://github.com/cloudfoundry/nodejs-buildpack
+    services:
+      - referral-management-sso-dev
+      - referral-management-newrelic-dev
+    env:
+      apiHost: https://manulife-development-dev.apigee.net
+      apiPath: /referral-management-service
+
